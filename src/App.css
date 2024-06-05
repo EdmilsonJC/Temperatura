@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
-  background-color: rgb(168, 168, 215);
+  background-color: rgb(220, 220, 215);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,9 +11,9 @@
 
 input[type="text"] {
   padding: 10px;
-  margin: 20px 0;
-  border: 2px solid #61dafb;
-  border-radius: 5px;
+  margin: 10px 0;
+  border: 2px solid #228B22;
+  border-radius: 30px;
   width: 80%;
   max-width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -23,9 +23,9 @@ input[type="text"] {
 button {
   padding: 10px 20px;
   margin: 10px 0;
-  background-color: blueviolet;
+  background-color:chocolate;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   color: white;
   font-size: 1em;
   cursor: pointer;
@@ -33,7 +33,7 @@ button {
 }
 
 button:hover {
-  background-color: #21a1f1;
+  background-color: #f121ba;
 }
 
 h2 {
@@ -41,12 +41,16 @@ h2 {
   color: #cad9f9;
 }
 
+h1{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .Card-Atual {
-  background-color: blueviolet;
+  background-color:#6B8E23;
   padding: 20px;
   margin: 20px 0;
   border-radius: 30px;
-  color: white;
+  color:black;
   width: 80%;
   max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -58,13 +62,15 @@ h2 {
 }
 
 .day-container {
-  background-color: blueviolet;
+  
+  background-color: #6B8E23;
   padding: 10px;
-  margin: 10px 0;
-  border-radius: 20px;
-  color: white;
-  width: 80%;
+  margin: 15px 0;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
   max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  
 }

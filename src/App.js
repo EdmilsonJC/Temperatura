@@ -7,11 +7,11 @@ import Titulo from "./Components/Card/Titulo";
 function App() {
   const diasSemana = [
     "Domingo",
-    "Segunda",
-    "Terça",
-    "Quarta",
-    "Quinta",
-    "Sexta",
+    "Segunda-Feira",
+    "Terça-Feira",
+    "Quarta-Feira",
+    "Quinta-Feira",
+    "Sexta-Feira",
     "Sábado",
   ];
   const [cidade, setCidade] = useState("");
@@ -43,11 +43,12 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Busca de Temperatura por Localidade</h1>
       <input
         type="text"
         value={cidade}
         onChange={(e) => setCidade(e.target.value)}
-        placeholder="Digite o nome da cidade"
+        placeholder="Insira a cidade"
       />
       <button onClick={callApi}>Buscar</button>
 
@@ -62,9 +63,9 @@ function App() {
             return (
               <div key={index} className="day-container">
                 <Titulo descricao={diaSemana}></Titulo>
-                <Max descricao={`${previsao.main.temp_max} ºC`}></Max>
-                <Min descricao={`${previsao.main.temp_min} ºC`}></Min>
-                <p>Descrição: {previsao.weather[0].description}</p>
+                <Max descricao={`${previsao.main.temp_max}`}></Max>
+                <Min descricao={`${previsao.main.temp_min}`}></Min>
+                <p>{previsao.weather[0].description}</p>
               </div>
             );
           })}
